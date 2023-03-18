@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Summary from "./Summary";
 function AppContainer() {
   const [data, setData] = useState([]);
+
   useEffect(() => {
     fetch("/data.json")
       .then((res) => res.json())
